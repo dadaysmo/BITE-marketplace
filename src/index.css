@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 20% 97%;
+    --foreground: 20 50% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 50% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 50% 10%;
+
+    --primary: 35 75% 59%;
+    --primary-foreground: 20 50% 10%;
+
+    --secondary: 20 60% 12%;
+    --secondary-foreground: 35 75% 95%;
+
+    --muted: 30 20% 92%;
+    --muted-foreground: 20 20% 45%;
+
+    --accent: 35 75% 59%;
+    --accent-foreground: 20 50% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: 35 75% 59%;
+
+    --radius: 0.75rem;
+
+    /* Custom brand colors */
+    --brand-brown: 20 60% 12%;
+    --brand-brown-light: 20 40% 25%;
+    --brand-orange: 35 75% 59%;
+    --brand-orange-light: 35 85% 70%;
+    --brand-cream: 35 50% 95%;
+    --brand-gold: 42 80% 55%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(20 60% 12%) 0%, hsl(20 40% 18%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(35 50% 98%) 100%);
+    --gradient-orange: linear-gradient(135deg, hsl(35 75% 59%) 0%, hsl(42 80% 55%) 100%);
+
+    /* Shadows */
+    --shadow-card: 0 4px 20px -4px hsl(20 60% 12% / 0.15);
+    --shadow-card-hover: 0 12px 40px -8px hsl(20 60% 12% / 0.25);
+    --shadow-glow: 0 0 40px hsl(35 75% 59% / 0.3);
+
+    /* Fonts */
+    --font-display: 'Caveat', cursive;
+    --font-body: 'Poppins', sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 20 60% 8%;
+    --foreground: 35 50% 95%;
+
+    --card: 20 50% 12%;
+    --card-foreground: 35 50% 95%;
+
+    --popover: 20 50% 12%;
+    --popover-foreground: 35 50% 95%;
+
+    --primary: 35 75% 59%;
+    --primary-foreground: 20 50% 10%;
+
+    --secondary: 20 40% 20%;
+    --secondary-foreground: 35 50% 95%;
+
+    --muted: 20 40% 18%;
+    --muted-foreground: 35 30% 60%;
+
+    --accent: 35 75% 59%;
+    --accent-foreground: 20 50% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 20 40% 20%;
+    --input: 20 40% 20%;
+    --ring: 35 75% 59%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-body);
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-orange);
+  }
+
+  .bg-brand-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .bg-orange-gradient {
+    background: var(--gradient-orange);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-card-hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--brand-brown-light));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--brand-brown));
+}
