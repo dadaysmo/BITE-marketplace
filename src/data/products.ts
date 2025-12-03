@@ -1,12 +1,12 @@
-import brownieTradicional from "@/assets/brownie-tradicional.jpg";
-import brownieMorango from "@/assets/brownie-morango.jpg";
-import browniePistache from "@/assets/brownie-pistache.jpg";
-import brownieSorvete from "@/assets/brownie-sorvete.jpg";
-import boloBrownie from "@/assets/bolo-brownie.jpg";
-import brownieMenta from "@/assets/brownie-menta.jpg";
-import brownieRecheado from "@/assets/brownie-recheado.jpg";
-import brownieBanana from "@/assets/brownie-banana.jpg";
-import brownieBeijinho from "@/assets/brownie-beijinho.jpg";
+import brownieTradicional from "@/assets/brownie-tradicional.png";
+import brownieMorango from "@/assets/brownie-morango.png";
+import browniePistache from "@/assets/brownie-pistache.png";
+import brownieSorvete from "@/assets/brownie-sorvete.png";
+import boloBrownie from "@/assets/bolo-brownie.png";
+import brownieMenta from "@/assets/brownie-menta.png";
+import brownieRecheado from "@/assets/brownie-recheado.png";
+import brownieBanana from "@/assets/brownie-banana.png";
+import brownieBeijinho from "@/assets/brownie-beijinho.png";
 
 export interface Product {
   id: string;

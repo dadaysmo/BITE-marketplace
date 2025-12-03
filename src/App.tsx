@@ -5,9 +5,9 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { CartProvider } from "@/contexts/CartContext";
-import Index from "./pages/Index";
+import Index from "./pages/Index.tsx";
 import ProductPage from "./pages/ProductPage";
-import NotFound from "./pages/NotFound";
+import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
 

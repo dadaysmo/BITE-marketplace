@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import ProductSection from "@/components/ProductSection";
-import Footer from "@/components/Footer";
-import Cart from "@/components/Cart";
-import LoginModal from "@/components/LoginModal";
-import RegisterModal from "@/components/RegisterModal";
+import Header from "@/components/Header.tsx";
+import Hero from "@/components/Hero.tsx";
+import ProductSection from "@/components/ProductsSection.tsx";
+import Footer from "@/components/Footer.tsx";
+import Cart from "@/components/Cart.tsx";
+import LoginModal from "@/components/LoginModal.tsx";
+import RegisterModal from "@/components/RegisterModal.tsx";
 import { getProductsByCategory } from "@/data/products";
 
 const Index = () => {
